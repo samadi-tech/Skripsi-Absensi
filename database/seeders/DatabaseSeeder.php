@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Absensi;
+use App\Models\Mahasiswa;
+use App\Models\Posting;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,5 +23,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        Absensi::factory(100)->create();
+        Posting::factory(30)->create();
+        Mahasiswa::factory(20)->create();
     }
 }
